@@ -1,0 +1,25 @@
+/**
+ * @tableofcontents
+ *
+ * 1. redaxmedia
+ *
+ * @since 3.0.0
+ *
+ * @package Redaxmedia
+ * @author Henry Ruhs
+ */
+
+/* @section 1. redaxmedia */
+
+@import '../../../../vendor/redaxmedia/redaxscript/assets/styles/_query.css';
+@import '../../../../vendor/redaxmedia/redaxscript/assets/styles/_redirect.css';
+@import '_variable.css';
+@import 'button.css';
+@import 'content.css';
+@import 'header.css';
+@import 'helper.css';
+@import 'homepage.css';
+@import 'field.css';
+@import 'form.css';
+@import 'layout.css';
+@import 'typo.css';

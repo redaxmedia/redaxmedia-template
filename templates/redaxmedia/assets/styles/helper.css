@@ -1,0 +1,17 @@
+/**
+ * @tableofcontents
+ *
+ * 1. redirect
+ *
+ * @since 3.0.0
+ *
+ * @package Redaxmedia
+ * @author Henry Ruhs
+ */
+
+/* @section 1. redirect */
+
+.rs-meta-redirect
+{
+	@extend %overlay-redirect;
+}

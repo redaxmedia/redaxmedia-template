@@ -1,0 +1,29 @@
+/**
+ * @tableofcontents
+ *
+ * 1. header
+ *
+ * @since 3.0.0
+ *
+ * @package Redaxmedia
+ * @author Henry Ruhs
+ */
+
+/* @section 1. header */
+
+.rs-header
+{
+	background: var(--rs-color-primary);
+	color: gray(0, 0.4);
+	font-size: 1.25em;
+	padding: 3.5em 0.5em;
+	text-align: center;
+}
+
+.rs-text-header
+{
+	color: gray(0, 0.3);
+	display: block;
+	font-weight: bold;
+	margin-top: 0.5em;
+}

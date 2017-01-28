@@ -1,0 +1,29 @@
+<?php namespace Redaxscript\Template; ?>
+
+<!DOCTYPE html>
+<html lang="<?php echo Tag::getRegistry('language'); ?>" dir="<?php echo Helper::getDirection(); ?>" class="<?php echo Helper::getClass('rs-is-'); ?>">
+
+	<!-- head -->
+
+	<head>
+		<?php echo Tag::partial(
+		[
+			'templates/admin/head.phtml',
+			'templates/timeline/head.phtml'
+		]); ?>
+	</head>
+
+	<!-- body -->
+
+	<body class="rs-body">
+		<?php $body = Tag::partial(
+		[
+			'templates/timeline/header.phtml',
+			'templates/timeline/main.phtml',
+			'templates/admin/script.phtml',
+			'templates/timeline/script.phtml'
+		]); ?>
+		<?php echo Tag::partial('templates/admin/panel.phtml'); ?>
+		<?php echo $body; ?>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<?php namespace Redaxscript\Template; ?>
+
+<!-- homepage -->
+
+<?php if (!Tag::getRegistry('fullRoute')): ?>
+    <main class="rs-main rs-has-timeline">
+		<?php echo Tag::partial('templates/timeline/homepage.phtml'); ?>
+    </main>
+
+<!-- else default -->
+
+<?php else: ?>
+    <main id="main" class="rs-main">
+
+        <!-- error -->
+
+        <?php if (Tag::getRegistry('contentError')): ?>
+            <?php echo Tag::partial('templates/timeline/error.phtml'); ?>
+
+        <!-- else content -->
+
+        <?php else: ?>
+            <?php echo Tag::partial('templates/timeline/content.phtml'); ?>
+        <?php endif; ?>
+    </main>
+<?php endif; ?>

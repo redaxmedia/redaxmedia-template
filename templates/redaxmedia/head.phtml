@@ -1,0 +1,52 @@
+<?php namespace Redaxscript\Template; ?>
+
+<!-- base -->
+
+<?php echo Tag::base(); ?>
+
+<!-- title -->
+
+<?php echo Tag::title(Tag::getRegistry('fullRoute') ? Helper::getTitle() : Tag::getSetting('title')); ?>
+
+<!-- meta -->
+
+<?php echo Tag::meta()
+	->init()
+	->append('charset', Tag::getSetting('charset'))
+	->append(['name' => 'author', 'content' => Tag::getSetting('author')])
+	->append(['name' => 'generator', 'content' => Tag::getLanguage('name', '_package') . ' ' . Tag::getLanguage('version', '_package')])
+	->append(['name' => 'description', 'content' => Tag::getRegistry('fullRoute') ? Helper::getDescription() : Tag::getSetting('description')])
+	->append(['name' => 'keywords', 'content' => Tag::getRegistry('fullRoute') ? Helper::getKeywords() : Tag::getSetting('keywords')])
+	->append(['name' => 'robots', 'content' => Tag::getRegistry('fullRoute') ? Helper::getRobots() : 'all'])
+	->append(['name' => 'viewport', 'content' => 'width=device-width'])
+	->append(['name' => 'theme-color', 'content' => '#ef5350'])
+	->append(['name' => 'msapplication-navbutton-color', 'content' => '#ef5350'])
+	->append(['name' => 'apple-mobile-web-app-status-bar-stylecontent', 'content' => '#ef5350'])
+	->append(['name' => 'msvalidate.01', 'content' => '9904AD2FB469A0860172008547D3BD27'])
+	->append(['name' => 'google-site-verification', 'content' => 'EH-bQWFd2zRU3xt-BB6aDUxCQTyCJGgZDJGajYo7TVc']); ?>
+
+<!-- link -->
+
+<?php echo Tag::link()
+	->init()
+	->append(['href' => Helper::getCanonical(), 'rel' => 'canonical'])
+	->appendFile('//fonts.googleapis.com/css?family=Open+Sans:300,700&amp;subset=' . Helper::getSubset())
+	->appendFile('dist/styles/base.min.css')
+	->appendFile('templates/redaxmedia/dist/styles/redaxmedia.min.css')
+	->rewrite(
+	[
+		'../../../../templates' => '../../templates',
+		'../../../../modules' => '../../modules'
+	])
+	->concat(); ?>
+
+<?php echo Tag::link()->init('admin'); ?>
+
+<!-- head script -->
+
+<?php echo Tag::script()
+	->init('head')
+	->prependFile('assets/scripts/init.js')
+	->prependFile('assets/scripts/support.js')
+	->transportVar('rs', Helper::getTransport())
+	->concat(); ?>

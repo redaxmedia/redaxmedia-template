@@ -1,0 +1,230 @@
+/**
+ * @tableofcontents
+ *
+ * 1. timeline
+ * 2. query
+ *    2.1 small max
+ *    2.2 small min
+ *    2.3 small min and medium max
+ *    2.4 medium max
+ *    2.5 medium min
+ *
+ * @since 3.0.0
+ *
+ * @package Redaxmedia
+ * @author Henry Ruhs
+ */
+
+/* @section 1. timeline */
+
+.rs-wrapper-timeline + .rs-wrapper-timeline
+{
+	margin-top: 1em;
+}
+
+.rs-section-timeline
+{
+	position: relative;
+}
+
+.rs-title-timeline
+{
+	margin-bottom: 0.5em;
+}
+
+/* @section 2. query */
+
+/* @section 2.1 small max */
+
+@media (--media-small-max)
+{
+	.rs-wrapper-timeline + .rs-wrapper-timeline .rs-title-timeline
+	{
+		margin-top: 1em;
+	}
+
+	.rs-title-timeline
+	{
+		font-size: 2em;
+		margin-bottom: 0.5em;
+	}
+
+	.rs-text-timeline
+	{
+		background: gray(255);
+		font-size: 1.25em;
+		padding: 1em;
+	}
+}
+
+/* @section 2.2 small min */
+
+@media (--media-small-min)
+{
+	.rs-has-timeline
+	{
+		position: relative;
+
+		&:before
+		{
+			border-left: 0.5em solid gray(0, 0.05);
+			content: '';
+			height: 100%;
+			position: absolute;
+		}
+	}
+
+	.rs-wrapper-timeline
+	{
+		display: flex;
+		flex-direction: column;
+		position: relative;
+
+		&:after,
+		&:before
+		{
+			box-sizing: border-box;
+			display: block;
+			height: 5em;
+			margin-top: -2.5em;
+			position: absolute;
+			top: 50%;
+			width: 5em;
+		}
+
+		&:after
+		{
+			color: gray(0, 0.2);
+			content: attr(data-category);
+			font-weight: bold;
+			line-height: 5em;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		&:before
+		{
+			background: var(--rs-color-primary);
+			border: 0.5em solid gray(240);
+			border-radius: 50%;
+			content: '';
+		}
+
+		&[data-category="misc"]:before
+		{
+			background: var(--rs-color-category-10);
+		}
+
+		&[data-category="vita"]:before
+		{
+			background: var(--rs-color-category-07);
+		}
+	}
+
+	.rs-wrapper-timeline + .rs-wrapper-timeline
+	{
+		margin-top: 4em;
+	}
+
+	.rs-section-timeline
+	{
+		background: gray(255);
+		border: 0.5em solid gray(0, 0.1);
+		padding: 1em;
+	}
+
+	.rs-text-timeline
+	{
+		height: 3em;
+		overflow: hidden;
+	}
+}
+
+/* @section 2.3 small min and medium max */
+
+@media (--media-small-min) and (--media-medium-max)
+{
+	.rs-has-timeline:before
+	{
+		left: 4.875em;
+	}
+
+	.rs-wrapper-timeline
+	{
+		margin-left: 6em;
+
+		&:after,
+		&:before
+		{
+			left: -7.375em;
+		}
+	}
+
+}
+
+/* @section 2.4 medium max */
+
+@media (--media-medium-max)
+{
+	.rs-section-timeline .rs-text-date
+	{
+		display: none;
+	}
+}
+
+/* @section 2.5 medium min */
+
+@media (--media-medium-min)
+{
+	.rs-has-timeline:before
+	{
+		left: 50%;
+		margin-left: -0.25em;
+	}
+
+	.rs-wrapper-timeline
+	{
+		&:after,
+		&:before
+		{
+			left: 50%;
+			margin-left: -2.5em;
+		}
+
+		&:nth-child(even)
+		{
+			align-items: flex-start;
+
+			& .rs-text-date
+			{
+				margin-right: -5.5em;
+				right: -50%;
+			}
+		}
+
+		&:nth-child(odd)
+		{
+			align-items: flex-end;
+
+			& .rs-text-date
+			{
+				left: -50%;
+				margin-left: -5.5em;
+			}
+		}
+	}
+
+	.rs-section-timeline
+	{
+		width: 35%;
+
+		& .rs-text-date
+		{
+			color: gray(0, 0.1);
+			font-size: 2em;
+			margin-top: -0.625em;
+			position: absolute;
+			top: 50%;
+		}
+	}
+}

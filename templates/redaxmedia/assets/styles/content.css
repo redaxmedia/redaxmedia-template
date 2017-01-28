@@ -1,0 +1,66 @@
+/**
+ * @tableofcontents
+ *
+ * 1. content
+ *    1.1 title
+ *    1.2 box
+ * 2. query
+ *    2.1 small min
+ *
+ * @since 3.0.0
+ *
+ * @package Redaxmedia
+ * @author Henry Ruhs
+ */
+
+/* @section 1. content */
+
+.rs-content
+{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100em;
+	padding: 1em;
+}
+
+/* @section 1.1 title */
+
+.rs-title-content,
+.rs-title-note
+{
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
+
+/* @section 1.2 box */
+
+.rs-box-content,
+.rs-box-note
+{
+	background: gray(255);
+	font-size: 1.25em;
+	padding: 1em;
+}
+
+.rs-box-note + .rs-box-note,
+.rs-box-note + .rs-button-note
+{
+	margin-top: 1em;
+}
+
+.rs-box-byline
+{
+	display: none;
+}
+
+/* @section 2. query */
+
+/* @section 2.1 small min */
+
+@media (--media-small-min)
+{
+	.rs-content
+	{
+		padding: 4em;
+	}
+}
