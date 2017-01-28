@@ -12,6 +12,7 @@ install:
 - nvm install 6
 - npm install --global ied
 - npm install --global grunt-cli
+- ied install
 
 script:
 - grunt
