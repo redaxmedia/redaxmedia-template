@@ -220,7 +220,7 @@
 
 		& .rs-text-date
 		{
-			color: gray(0, 0.1);
+			color: gray(0, 0.2);
 			font-size: 2em;
 			margin-top: -0.625em;
 			position: absolute;
