@@ -9,7 +9,7 @@
 		<?php echo Tag::partial(
 		[
 			'templates/admin/head.phtml',
-			'templates/timeline/head.phtml'
+			'templates/redaxmedia/head.phtml'
 		]); ?>
 	</head>
 
@@ -18,10 +18,10 @@
 	<body class="rs-body">
 		<?php $body = Tag::partial(
 		[
-			'templates/timeline/header.phtml',
-			'templates/timeline/main.phtml',
+			'templates/redaxmedia/header.phtml',
+			'templates/redaxmedia/main.phtml',
 			'templates/admin/script.phtml',
-			'templates/timeline/script.phtml'
+			'templates/redaxmedia/script.phtml'
 		]); ?>
 		<?php echo Tag::partial('templates/admin/panel.phtml'); ?>
 		<?php echo $body; ?>

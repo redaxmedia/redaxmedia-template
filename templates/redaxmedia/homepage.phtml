@@ -13,7 +13,7 @@
                 <h2 class="rs-title-timeline">
                     <a href="<?php echo $article->alias; ?>"><?php echo $article->title; ?></a>
                 </h2>
-                <p class="rs-text-timeline"><?php echo $article->text; ?></p>
+                <p class="rs-text-timeline"><?php echo strip_tags($article->text); ?></p>
                 <span class="rs-text-date"><?php echo date(Tag::getSetting('date'), strtotime($article->date)); ?></span>
             </section>
         </div>
