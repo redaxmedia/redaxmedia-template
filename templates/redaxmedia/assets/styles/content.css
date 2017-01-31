@@ -32,6 +32,11 @@
 	margin-bottom: 0.5em;
 }
 
+.rs-box-content ~ .rs-title-content
+{
+	margin-top: 0.5em;
+}
+
 /* @section 1.2 box */
 
 .rs-box-content,
@@ -42,16 +47,15 @@
 	padding: 1em;
 }
 
-.rs-box-byline
-{
-	display: none;
-}
-
-.rs-box-content ~ .rs-title-content,
 .rs-box-note + .rs-box-note,
 .rs-box-note + .rs-button-note
 {
 	margin-top: 1em;
+}
+
+.rs-box-byline
+{
+	display: none;
 }
 
 /* @section 2. query */
