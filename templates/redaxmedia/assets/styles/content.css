@@ -42,15 +42,16 @@
 	padding: 1em;
 }
 
+.rs-box-byline
+{
+	display: none;
+}
+
+.rs-box-content ~ .rs-title-content,
 .rs-box-note + .rs-box-note,
 .rs-box-note + .rs-button-note
 {
 	margin-top: 1em;
-}
-
-.rs-box-byline
-{
-	display: none;
 }
 
 /* @section 2. query */
@@ -62,5 +63,10 @@
 	.rs-content
 	{
 		padding: 4em;
+	}
+
+	.rs-box-content ~ .rs-title-content
+	{
+		margin-top: 2em;
 	}
 }
