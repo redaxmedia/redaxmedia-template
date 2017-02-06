@@ -138,7 +138,7 @@ module.exports = function (grunt)
 			},
 			toclintTemplates:
 			{
-				command: 'vendor/bin/tocgen.sh templates/redaxmedia/assets/styles .tocgen -l'
+				command: 'sh vendor/bin/tocgen.sh templates/redaxmedia/assets/styles .tocgen -l'
 			},
 			options:
 			{
