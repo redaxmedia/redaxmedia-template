@@ -1,0 +1,76 @@
+.rs-box-skill + .rs-box-skill
+{
+	margin-top: 2em;
+}
+
+.rs-list-skill li
+{
+	background: gray(240);
+	margin-top: 1em;
+	padding: 0.5em 1em;
+}
+
+/* @section 2. query */
+
+/* @section 2.1 medium min */
+
+@media (--media-medium-min)
+{
+	.rs-list-skill li
+	{
+		position: relative;
+
+		&:after
+		{
+			background: gray(230);
+			bottom: 0;
+			color: gray(0, 0.2);
+			content: attr(data-level) ' / 100';
+			font-weight: bold;
+			left: 0;
+			margin-left: 10em;
+			padding: 0.5em 1em;
+			position: absolute;
+			right: 0;
+			text-align: right;
+			top: 0;
+		}
+
+		&[data-level="100"]:after,
+		&[data-level="90"]:after
+		{
+			background: var(--rs-color-common-10);
+		}
+
+		&[data-level="80"]:after,
+		&[data-level="70"]:after
+		{
+			background: var(--rs-color-common-07);
+		}
+
+		&[data-level="90"]:after
+		{
+			left: 10%;
+		}
+
+		&[data-level="80"]:after
+		{
+			left: 20%;
+		}
+
+		&[data-level="70"]:after
+		{
+			left: 30%;
+		}
+
+		&[data-level="60"]:after
+		{
+			left: 40%;
+		}
+
+		&[data-level="50"]:after
+		{
+			left: 50%;
+		}
+	}
+}

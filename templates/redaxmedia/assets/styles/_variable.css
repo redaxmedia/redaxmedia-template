@@ -3,7 +3,7 @@
  *
  * 1. variable
  *    1.1 base color
- *    1.2 category color
+ *    1.2 common color
  *    1.3 font
  *
  * @since 3.0.0
@@ -20,24 +20,24 @@
 
 	--rs-color-primary: #ef5350;
 
-	/* @section 1.2 category color */
+	/* @section 1.2 common color */
 
-	--rs-color-category-01: #ef5350;
-	--rs-color-category-02: #ec407a;
-	--rs-color-category-03: #ab47bc;
-	--rs-color-category-04: #7e57c2;
-	--rs-color-category-05: #5c6bc0;
-	--rs-color-category-06: #42a5f5;
-	--rs-color-category-07: #29b6f6;
-	--rs-color-category-08: #26c6da;
-	--rs-color-category-09: #26a69a;
-	--rs-color-category-10: #66bb6a;
-	--rs-color-category-11: #9ccc65;
-	--rs-color-category-12: #d4e157;
-	--rs-color-category-13: #ffee58;
-	--rs-color-category-14: #ffca28;
-	--rs-color-category-15: #ffa726;
-	--rs-color-category-16: #ff7043;
+	--rs-color-common-01: #ef5350;
+	--rs-color-common-02: #ec407a;
+	--rs-color-common-03: #ab47bc;
+	--rs-color-common-04: #7e57c2;
+	--rs-color-common-05: #5c6bc0;
+	--rs-color-common-06: #42a5f5;
+	--rs-color-common-07: #29b6f6;
+	--rs-color-common-08: #26c6da;
+	--rs-color-common-09: #26a69a;
+	--rs-color-common-10: #66bb6a;
+	--rs-color-common-11: #9ccc65;
+	--rs-color-common-12: #d4e157;
+	--rs-color-common-13: #ffee58;
+	--rs-color-common-14: #ffca28;
+	--rs-color-common-15: #ffa726;
+	--rs-color-common-16: #ff7043;
 
 	/* @section 1.3 font */
 

@@ -112,12 +112,12 @@
 
 		&[data-category="misc"]:before
 		{
-			background: var(--rs-color-category-10);
+			background: var(--rs-color-common-10);
 		}
 
 		&[data-category="vita"]:before
 		{
-			background: var(--rs-color-category-07);
+			background: var(--rs-color-common-07);
 		}
 	}
 

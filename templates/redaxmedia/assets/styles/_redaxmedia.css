@@ -3,7 +3,7 @@
  *
  * 1. redaxmedia
  *
- * @since 3.0.0
+ * @since 3.1.0
  *
  * @package Redaxmedia
  * @author Henry Ruhs
@@ -18,9 +18,10 @@
 @import 'content.css';
 @import 'header.css';
 @import 'helper.css';
-@import 'homepage.css';
 @import 'field.css';
 @import 'form.css';
 @import 'layout.css';
 @import 'pagination.css';
+@import 'skill.css';
+@import 'timeline.css';
 @import 'typo.css';
