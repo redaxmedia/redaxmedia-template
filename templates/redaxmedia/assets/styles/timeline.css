@@ -85,11 +85,11 @@
 		{
 			box-sizing: border-box;
 			display: block;
-			height: 5em;
-			margin-top: -2.5em;
+			height: 4em;
+			margin-top: -2em;
 			position: absolute;
 			top: 50%;
-			width: 5em;
+			width: 4em;
 		}
 
 		&:after
@@ -97,7 +97,7 @@
 			color: gray(0, 0.2);
 			content: attr(data-category);
 			font-weight: bold;
-			line-height: 5em;
+			line-height: 4em;
 			text-align: center;
 			text-transform: uppercase;
 		}
@@ -105,8 +105,8 @@
 		&:before
 		{
 			background: var(--rs-color-primary);
-			border: 0.5em solid gray(240);
 			border-radius: 50%;
+			box-shadow: 0 0 0 0.5em gray(240);
 			content: '';
 		}
 
@@ -188,7 +188,7 @@
 		&:before
 		{
 			left: 50%;
-			margin-left: -2.5em;
+			margin-left: -2em;
 		}
 
 		&:nth-child(even)

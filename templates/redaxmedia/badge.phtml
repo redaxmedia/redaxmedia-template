@@ -1,0 +1,14 @@
+<?php namespace Redaxscript\Template; ?>
+
+<?php $article = Tag::articleRaw()
+	->where(
+	[
+		'alias' => 'skills',
+		'status' => 1
+	])
+	->findOne();
+?>
+
+<?php if ($article): ?>
+	<a href="<?php echo $article->alias; ?>" class="rs-link-skill"><?php echo $article->title; ?></a>
+<?php endif; ?>
