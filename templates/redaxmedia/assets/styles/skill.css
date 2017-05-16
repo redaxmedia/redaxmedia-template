@@ -26,11 +26,11 @@
 	{
 		background: gray(230);
 		color: gray(0, 0.2);
-		content: attr(data-level) '%';
+		content: attr(data-level) '/100';
 		display: block;
 		font-weight: bold;
 		margin-top: 0.25em;
-		padding: 0.25em 0.75em;
+		padding: 0.25em 0.5em;
 		text-align: right;
 	}
 
