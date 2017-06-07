@@ -1,4 +1,4 @@
-Redaxmedia template
+Redaxmedia Template
 ===================
 
 > Template for Redaxmedia's website.
