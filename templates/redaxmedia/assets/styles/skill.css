@@ -1,3 +1,16 @@
+/**
+ * @tableofcontents
+ *
+ * 1. skill
+ *
+ * @since 3.2.0
+ *
+ * @package Redaxmedia
+ * @author Henry Ruhs
+ */
+
+/* @section 1. skill */
+
 .rs-link-skill
 {
 	background: var(--rs-color-common-07);
