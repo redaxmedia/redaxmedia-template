@@ -1,0 +1,24 @@
+.rs-list-result
+{
+	& li
+	{
+		margin-top: 1em;
+	}
+
+	& .rs-link-result
+	{
+		text-decoration: underline;
+	}
+
+	& .rs-link-result,
+	& .rs-text-result-date
+	{
+		display: block;
+	}
+
+	& .rs-text-result-date
+	{
+		color: gray(0, 0.2);
+		font-size: 0.875em;
+	}
+}
