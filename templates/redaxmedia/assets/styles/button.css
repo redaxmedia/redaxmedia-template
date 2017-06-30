@@ -14,25 +14,9 @@
 
 /* @section 1. button */
 
-.rs-button-default,
-.rs-button-note
+.rs-button-default
 {
-	background: gray(0, 0.1);
-	color: gray(0, 0.4);
-	cursor: pointer;
-	display: inline-block;
-	padding: 0.75em 0.5em;
-
-	&:hover
-	{
-		background: var(--rs-color-primary);
-	}
-
-	&[disabled]
-	{
-		opacity: 0.5;
-		pointer-events: none;
-	}
+	@extend %rs-button;
 }
 
 /* @section 2. query */
