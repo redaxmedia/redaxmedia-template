@@ -16,6 +16,7 @@
 %rs-button
 {
 	background: gray(0, 0.1);
+	box-sizing: border-box;
 	color: gray(0, 0.4);
 	cursor: pointer;
 	display: inline-block;
