@@ -15,7 +15,6 @@
 		"cssnano": "3.10.0",
 		"colorguard": "1.2.0",
 		"grunt": "1.0.1",
-		"grunt-contrib-watch": "1.0.0",
 		"grunt-htmlhint": "0.9.13",
 		"grunt-jsonlint": "1.1.0",
 		"grunt-ncss-linter": "1.2.1",
