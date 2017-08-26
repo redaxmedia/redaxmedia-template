@@ -10,7 +10,6 @@
 	},
 	"require-dev":
 	{
-		"redaxmedia/redaxscript": "dev-master",
-		"redaxmedia/tocgen": "4.1.1"
+		"redaxmedia/redaxscript": "dev-master"
 	}
 }

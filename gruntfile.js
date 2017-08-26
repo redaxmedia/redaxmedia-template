@@ -9,8 +9,7 @@ module.exports = function (grunt)
 		jsonlint: require('./tasks/jsonlint')(grunt),
 		ncsslint: require('./tasks/ncsslint')(grunt),
 		htmlhint: require('./tasks/htmlhint')(grunt),
-		postcss: require('./tasks/postcss')(grunt),
-		shell: require('./tasks/shell')(grunt)
+		postcss: require('./tasks/postcss')(grunt)
 	});
 
 	/* load tasks */
@@ -25,8 +24,7 @@ module.exports = function (grunt)
 		'stylelint',
 		'colorguard',
 		'ncsslint',
-		'htmlhint',
-		'toclint'
+		'htmlhint'
 	]);
 	grunt.registerTask('stylelint',
 	[
@@ -39,14 +37,6 @@ module.exports = function (grunt)
 	grunt.registerTask('colorguard',
 	[
 		'postcss:colorguard'
-	]);
-	grunt.registerTask('toclint',
-	[
-		'shell:toclintTemplates'
-	]);
-	grunt.registerTask('toc',
-	[
-		'shell:tocTemplates'
 	]);
 	grunt.registerTask('build',
 	[
