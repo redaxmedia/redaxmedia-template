@@ -4,11 +4,11 @@ module.exports = function ()
 
 	var config =
 	{
-		templateRedaxmedia:
+		templates:
 		{
 			src:
 			[
-				'templates/redaxmedia/*.phtml'
+				'templates/*/*.phtml'
 			]
 		},
 		options:

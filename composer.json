@@ -1,7 +1,7 @@
 {
 	"name": "redaxmedia/redaxmedia-template",
 	"description": "Template for Redaxmedia's website",
-	"version": "3.2.2",
+	"version": "3.2.3",
 	"homepage": "https://redaxmedia.com",
 	"license": "GPL-3.0",
 	"require":
@@ -10,7 +10,6 @@
 	},
 	"require-dev":
 	{
-		"redaxmedia/redaxscript": "dev-master",
-		"redaxmedia/tocgen": "4.1.1"
+		"redaxmedia/redaxscript": "dev-master"
 	}
 }

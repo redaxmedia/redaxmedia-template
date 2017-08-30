@@ -4,11 +4,11 @@ module.exports = function ()
 
 	var config =
 	{
-		templateRedaxmedia:
+		templates:
 		{
 			options:
 			{
-				path: 'templates/redaxmedia/*.phtml',
+				path: 'templates/*/*.phtml',
 				namespace: 'rs',
 				loglevel: 'info',
 				haltonerror: true

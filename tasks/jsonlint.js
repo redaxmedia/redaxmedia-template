@@ -17,8 +17,7 @@ module.exports = function ()
 			src:
 			[
 				'.htmlhintrc',
-				'.stylelintrc',
-				'.tocgen'
+				'.stylelintrc'
 			]
 		}
 	};
