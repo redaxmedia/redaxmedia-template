@@ -11,8 +11,8 @@
 
 /* @section 1. redaxmedia */
 
-@import '../../../../vendor/redaxmedia/redaxscript/assets/styles/_query.css';
-@import '../../../../vendor/redaxmedia/redaxscript/assets/styles/_redirect.css';
+@import '../../../../vendor/redaxscript/redaxscript/assets/styles/_query.css';
+@import '../../../../vendor/redaxscript/redaxscript/assets/styles/_redirect.css';
 @import '_variable.css';
 @import '_button.css';
 @import 'button.css';
