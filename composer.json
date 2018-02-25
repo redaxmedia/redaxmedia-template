@@ -1,7 +1,7 @@
 {
 	"name": "redaxmedia/redaxmedia-template",
 	"description": "Template for Redaxmedia's website",
-	"version": "3.3.0",
+	"version": "3.3.1",
 	"homepage": "https://redaxmedia.com",
 	"license": "GPL-3.0",
 	"require":
