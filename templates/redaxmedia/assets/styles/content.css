@@ -6,14 +6,9 @@
  *    1.2 box
  * 2. query
  *    2.1 small min
- *
- * @since 3.0.0
- *
- * @package Redaxmedia
- * @author Henry Ruhs
  */
 
-/* @section 1. content */
+/** @section 1. content */
 
 .rs-content
 {
@@ -23,7 +18,7 @@
 	padding: 1em;
 }
 
-/* @section 1.1 title */
+/** @section 1.1 title */
 
 .rs-title-content
 {
@@ -36,7 +31,7 @@
 	margin-top: 0.5em;
 }
 
-/* @section 1.2 box */
+/** @section 1.2 box */
 
 .rs-box-content
 {
@@ -50,9 +45,9 @@
 	display: none;
 }
 
-/* @section 2. query */
+/** @section 2. query */
 
-/* @section 2.1 small min */
+/** @section 2.1 small min */
 
 @media (--media-small-min)
 {

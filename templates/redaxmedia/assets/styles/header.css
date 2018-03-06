@@ -2,14 +2,9 @@
  * @tableofcontents
  *
  * 1. header
- *
- * @since 3.0.0
- *
- * @package Redaxmedia
- * @author Henry Ruhs
  */
 
-/* @section 1. header */
+/** @section 1. header */
 
 .rs-header
 {
