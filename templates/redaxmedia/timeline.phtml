@@ -1,7 +1,5 @@
 <?php namespace Redaxscript\Template; ?>
 
-<?php $rewriteRoute = Tag::getRegistry('rewriteRoute'); ?>
-
 <!-- timeline -->
 
 <article id="content" class="rs-content">
@@ -12,7 +10,7 @@
 
 			<section class="rs-section-timeline">
 				<h2 class="rs-title-timeline">
-					<a href="<?php echo $rewriteRoute . $eventArray['articleArray']['route']; ?>"><?php echo $eventArray['articleArray']['title']; ?></a>
+					<a href="<?php echo Tag::getRegistry('rewriteRoute') . $eventArray['articleArray']['route']; ?>"><?php echo $eventArray['articleArray']['title']; ?></a>
 				</h2>
 				<p class="rs-text-timeline"><?php echo $eventArray['articleArray']['text']; ?></p>
 				<span class="rs-text-date"><?php echo $eventArray['articleArray']['date']; ?></span>
