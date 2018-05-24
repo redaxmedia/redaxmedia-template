@@ -4,9 +4,9 @@
 
 <?php if (Tag::getRegistry('categoryId')): ?>
 	<main class="rs-main rs-has-timeline">
-		<?php echo Tag::partial('templates/redaxmedia/badge.phtml'); ?>
-		<?php include('templates/redaxmedia/helper/timeline.php'); ?>
-		<?php include('templates/redaxmedia/timeline.phtml'); ?>
+		<?php echo Tag::partial('redaxmedia/badge.phtml'); ?>
+		<?php include('redaxmedia/helper/timeline.php'); ?>
+		<?php include('redaxmedia/timeline.phtml'); ?>
 	</main>
 
 <!-- else default -->
@@ -17,12 +17,12 @@
 		<!-- error -->
 
 		<?php if (Tag::getRegistry('contentError')): ?>
-			<?php echo Tag::partial('templates/redaxmedia/error.phtml'); ?>
+			<?php echo Tag::partial('redaxmedia/error.phtml'); ?>
 
 		<!-- else content -->
 
 		<?php else: ?>
-			<?php echo Tag::partial('templates/redaxmedia/content.phtml'); ?>
+			<?php echo Tag::partial('redaxmedia/content.phtml'); ?>
 		<?php endif; ?>
 	</main>
 <?php endif; ?>
