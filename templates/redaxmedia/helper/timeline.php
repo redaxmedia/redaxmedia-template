@@ -4,13 +4,13 @@ namespace Redaxscript;
 $timelineArray = [];
 $categories = Db::forTablePrefix('categories')->where('status', 1)->findMany();
 $articles = Db::forTablePrefix('articles')->whereNotNull('category')->where('status', 1)->orderByDesc('date');
-if (Template\Tag::getRegistry('firstParameter'))
+if (Template\Helper::getRegistry('firstParameter'))
 {
-	$categoryId = Template\Tag::getRegistry('categoryId');
+	$categoryId = Template\Helper::getRegistry('categoryId');
 	$articles = $articles->where('category', $categoryId);
 }
 $articles = $articles->findMany();
-$dateFormat = Template\Tag::getSetting('date');
+$dateFormat = Template\Helper::getSetting('date');
 
 /* process articles */
 
