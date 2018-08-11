@@ -1,16 +1,16 @@
 <?php
-namespace Redaxscript\Template;
+namespace Redaxscript;
 
 $timelineArray = [];
-$categories = Tag::categoryRaw()->where('status', 1)->findMany();
-$articles = Tag::articleRaw()->whereNotNull('category')->where('status', 1)->orderByDesc('date');
-if (Tag::getRegistry('firstParameter'))
+$categories = Db::forTablePrefix('categories')->where('status', 1)->findMany();
+$articles = Db::forTablePrefix('articles')->whereNotNull('category')->where('status', 1)->orderByDesc('date');
+if (Template\Helper::getRegistry('firstParameter'))
 {
-	$categoryId = Tag::getRegistry('categoryId');
+	$categoryId = Template\Helper::getRegistry('categoryId');
 	$articles = $articles->where('category', $categoryId);
 }
 $articles = $articles->findMany();
-$dateFormat = Tag::getSetting('date');
+$dateFormat = Template\Helper::getSetting('date');
 
 /* process articles */
 
