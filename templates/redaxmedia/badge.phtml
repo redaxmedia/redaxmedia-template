@@ -1,14 +1,5 @@
 <?php namespace Redaxscript; ?>
 
-<?php $article = Db::forTablePrefix('articles')
-	->where(
-	[
-		'alias' => 'skills',
-		'status' => 1
-	])
-	->findOne();
-?>
-
-<?php if ($article): ?>
-	<a href="<?php echo $article->alias; ?>" class="rs-link-skill"><?php echo $article->title; ?></a>
+<?php if ($badge): ?>
+	<a href="<?php echo $badge->alias; ?>" class="rs-link-skill"><?php echo $badge->title; ?></a>
 <?php endif; ?>

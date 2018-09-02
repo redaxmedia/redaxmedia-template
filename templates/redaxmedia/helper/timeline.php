@@ -10,12 +10,13 @@ if (Template\Helper::getRegistry('firstParameter'))
 	$articles = $articles->where('category', $categoryId);
 }
 $articles = $articles->findMany();
-$dateFormat = Template\Helper::getSetting('date');
+$dater = new Dater();
 
 /* process articles */
 
 foreach ($articles as $article)
 {
+	$dater->init($article->date);
 	$eventAlias = $article->alias;
 	$category = $categories[$article->category - 1];
 	$timelineArray[$eventAlias] =
@@ -26,12 +27,13 @@ foreach ($articles as $article)
 			'alias' => $article->alias,
 			'route' => $category->alias . '/' . $article->alias,
 			'text' => $article->text,
-			'date' => date($dateFormat, strtotime($article->date))
+			'date' => $dater->formatDate()
 		],
 		'categoryArray' =>
 		[
 			'title' => $category->title,
-			'alias' => $category->alias
+			'alias' => $category->alias,
+			'route' => $category->alias
 		]
 	];
 }

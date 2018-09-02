@@ -3,6 +3,8 @@
 <!-- content -->
 
 <article id="content" class="rs-content">
+
 	<?php $content = Tag::content(); ?>
-	<?php echo $content ? $content : Tag::article(); ?>
+	<?php echo $content ? $content : Tag::article(Helper::getRegistry('categoryId'), Helper::getRegistry('articleId')); ?>
+
 </article>
