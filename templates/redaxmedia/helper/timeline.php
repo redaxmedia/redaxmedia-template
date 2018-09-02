@@ -2,7 +2,6 @@
 namespace Redaxscript;
 
 $timelineArray = [];
-$categories = Db::forTablePrefix('categories')->where('status', 1)->findMany();
 $articles = Db::forTablePrefix('articles')->whereNotNull('category')->where('status', 1)->orderByDesc('date');
 if (Template\Helper::getRegistry('firstParameter'))
 {
@@ -18,7 +17,7 @@ foreach ($articles as $article)
 {
 	$dater->init($article->date);
 	$eventAlias = $article->alias;
-	$category = $categories[$article->category - 1];
+	$category = Db::forTablePrefix('categories')->whereIdIs($article->category)->findOne();
 	$timelineArray[$eventAlias] =
 	[
 		'articleArray' =>
