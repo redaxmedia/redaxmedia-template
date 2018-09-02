@@ -1,6 +1,6 @@
-<?php namespace Redaxscript\Template; ?>
+<?php namespace Redaxscript; ?>
 
-<?php $article = Tag::articleRaw()
+<?php $article = Db::forTablePrefix('articles')
 	->where(
 	[
 		'alias' => 'skills',
