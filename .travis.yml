@@ -9,7 +9,7 @@ before_install:
 
 install:
 - composer install
-- nvm install 9
+- nvm install 10
 - npm install --global grunt-cli
 - npm install
 
