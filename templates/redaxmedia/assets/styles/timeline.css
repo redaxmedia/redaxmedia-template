@@ -33,17 +33,6 @@
 
 @media (--media-small-max)
 {
-	.rs-wrapper-timeline + .rs-wrapper-timeline .rs-title-timeline
-	{
-		margin-top: 0.5em;
-	}
-
-	.rs-title-timeline
-	{
-		font-size: 2em;
-		margin-bottom: 0.5em;
-	}
-
 	.rs-text-timeline
 	{
 		background: gray(255);
