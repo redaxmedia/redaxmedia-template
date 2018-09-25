@@ -30,8 +30,11 @@
 <?php echo Tag::link()
 	->init()
 	->append(['href' => Helper::getRegistry('fullRoute') ? Helper::getCanonical() : Helper::getRegistry('root'), 'rel' => 'canonical'])
-	->appendFile('https://fonts.googleapis.com/css?family=Open+Sans:300,700&amp;subset=' . Helper::getSubset())
-	->appendFile('templates/redaxmedia/dist/styles/redaxmedia.min.css')
+	->appendFile(
+	[
+		'https://fonts.googleapis.com/css?family=Open+Sans:300,700&amp;subset=' . Helper::getSubset(),
+		'templates/redaxmedia/dist/styles/redaxmedia.min.css'
+	])
 	->rewrite(
 	[
 		'../../../../templates' => '../../templates',
