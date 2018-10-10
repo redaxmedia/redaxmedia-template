@@ -1,10 +1,7 @@
 <?php
 namespace Redaxscript;
 
-$badge = Db::forTablePrefix('articles')
-	->where(
-	[
-		'alias' => 'skills',
-		'status' => 1
-	])
-	->findOne();
+$badge = Db::forTablePrefix('extras')
+	->where('alias', 'badge')
+	->findOne()
+	->text;

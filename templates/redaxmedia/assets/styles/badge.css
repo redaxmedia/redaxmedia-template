@@ -1,0 +1,25 @@
+/**
+ * @tableofcontents
+ *
+ * 1. badge
+ *    1.1 badge
+ */
+
+/** @section 1. badge */
+
+/** @section 1.1 badge */
+
+.rs-link-badge
+{
+	background: var(--rs-color-common-07);
+	color: gray(0, 0.4);
+	font-weight: bold;
+	padding: 3em 0 1em;
+	position: fixed;
+	right: -5em;
+	text-align: center;
+	top: -1.625em;
+	transform: rotate(45deg);
+	width: 12em;
+	z-index: 1;
+}
