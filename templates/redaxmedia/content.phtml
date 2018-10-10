@@ -3,7 +3,6 @@
 <!-- content -->
 
 <article id="content" class="rs-content">
-	<?php echo Tag::breadcrumb(); ?>
 	<?php $content = Tag::content(); ?>
 	<?php echo $content ? $content : Tag::partial('default/article.phtml'); ?>
 </article>

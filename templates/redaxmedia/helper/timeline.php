@@ -36,3 +36,5 @@ foreach ($articles as $article)
 		]
 	];
 }
+
+return $timelineArray;
