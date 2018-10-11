@@ -33,6 +33,11 @@
 
 @media (--media-small-max)
 {
+	.rs-title-timeline
+	{
+		font-size: 2em;
+	}
+
 	.rs-text-timeline
 	{
 		background: gray(255);
@@ -52,8 +57,9 @@
 		&:before
 		{
 			border-left: 0.5em solid gray(0, 0.05);
+			bottom: 0.5em;
 			content: '';
-			height: 100%;
+			top: 0.5em;
 			position: absolute;
 		}
 	}
@@ -113,7 +119,7 @@
 	.rs-section-timeline
 	{
 		background: gray(255);
-		border: 0.5em solid gray(0, 0.1);
+		border-radius: 0.25em;
 		padding: 1em;
 	}
 
