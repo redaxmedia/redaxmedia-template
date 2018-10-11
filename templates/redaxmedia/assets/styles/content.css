@@ -22,8 +22,7 @@
 
 .rs-title-content
 {
-	font: bold 2em var(--rs-font-secondary);
-	margin-bottom: 0.5em;
+	@extend %rs-title-content;
 }
 
 .rs-box-content ~ .rs-title-content
@@ -35,10 +34,7 @@
 
 .rs-box-content
 {
-	background: gray(255);
-	border-radius: 0.25em;
-	font-size: 1.25em;
-	padding: 1em;
+	@extend %rs-box-content;
 }
 
 .rs-box-byline

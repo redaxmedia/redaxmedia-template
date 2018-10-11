@@ -13,8 +13,7 @@
 
 .rs-title-result
 {
-	font: bold 2em var(--rs-font-secondary);
-	margin-bottom: 0.5em;
+	@extend %rs-title-content;
 }
 
 .rs-list-result + .rs-title-result
@@ -26,13 +25,9 @@
 
 .rs-list-result
 {
-	font-size: 1.25em;
-
 	& li
 	{
-		background: gray(255);
-		border-radius: 0.25em;
-		padding: 1em;
+		@extend %rs-box-content;
 
 		& + li
 		{

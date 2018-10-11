@@ -24,8 +24,7 @@
 
 .rs-title-timeline
 {
-	font: bold 2em var(--rs-font-secondary);
-	margin-bottom: 0.5em;
+	@extend %rs-title-content;
 }
 
 .rs-text-timeline

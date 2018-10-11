@@ -14,17 +14,14 @@
 
 .rs-title-note
 {
-	font-size: 2em;
-	margin-bottom: 0.5em;
+	@extend %rs-title-content;
 }
 
 /** @section 1.2 box */
 
 .rs-box-note
 {
-	background: gray(255);
-	font-size: 1.25em;
-	padding: 1em;
+	@extend %rs-box-content;
 
 	& + .rs-box-note,
 	& + .rs-button-note
