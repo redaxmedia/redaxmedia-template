@@ -22,7 +22,7 @@
 
 .rs-title-content
 {
-	font-size: 2em;
+	font: bold 2em var(--rs-font-secondary);
 	margin-bottom: 0.5em;
 }
 

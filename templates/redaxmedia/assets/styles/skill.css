@@ -25,12 +25,13 @@
 	{
 		background: gray(230);
 		border-radius: 0.25em;
-		color: gray(0, 0.2);
+		color: gray(0, 0.3);
 		content: attr(data-level) '/100';
 		display: block;
+		font-size: 0.75em;
 		font-weight: bold;
 		margin-top: 0.25em;
-		padding: 0.25em 0.5em;
+		padding: 0.5em 0.75em;
 		text-align: right;
 	}
 

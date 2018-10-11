@@ -24,7 +24,13 @@
 
 .rs-title-timeline
 {
+	font: bold 2em var(--rs-font-secondary);
 	margin-bottom: 0.5em;
+}
+
+.rs-text-timeline
+{
+	font-size: 1.25em;
 }
 
 /** @section 2. query */
@@ -33,15 +39,9 @@
 
 @media (--media-small-max)
 {
-	.rs-title-timeline
-	{
-		font-size: 2em;
-	}
-
 	.rs-text-timeline
 	{
 		background: gray(255);
-		font-size: 1.25em;
 		padding: 1em;
 	}
 }
@@ -211,7 +211,7 @@
 		& .rs-text-date
 		{
 			color: gray(0, 0.2);
-			font-size: 2em;
+			font-size: 1.75em;
 			margin-top: -0.625em;
 			position: absolute;
 			top: 50%;

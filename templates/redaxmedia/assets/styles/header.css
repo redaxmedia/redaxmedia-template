@@ -9,16 +9,20 @@
 .rs-header
 {
 	background: var(--rs-color-primary);
-	color: gray(0, 0.4);
-	font-size: 1.25em;
-	padding: 3em 1em;
+	padding: 4em 2em;
 	text-align: center;
+}
+
+.rs-title-header
+{
+	color: gray(0, 0.4);
+	font: bold 5em var(--rs-font-secondary);
 }
 
 .rs-text-header
 {
 	color: gray(0, 0.3);
 	display: block;
-	font-weight: bold;
-	margin-top: 1em;
+	font-size: 1.5em;
+	margin-top: 2em;
 }

@@ -7,9 +7,6 @@
 <?php if ($categoryId || $articleId): ?>
 	<section class="rs-section-article">
 		<?php echo Tag::article($categoryId, $articleId); ?>
-		<?php if ($categoryId): ?>
-			<?php echo Tag::pagination('articles', $categoryId); ?>
-		<?php endif; ?>
 	</section>
 <?php endif; ?>
 
