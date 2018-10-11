@@ -14,20 +14,9 @@
 .rs-field-textarea
 {
 	background: gray(255);
-	border: 0.5rem solid gray(0, 0.1);
+	border-radius: 0.25em;
 	padding: 0.75em 0.5em;
-	transition: border-color 0.2s;
 	width: 100%;
-
-	&:hover
-	{
-		border-color: gray(0, 0.2);
-	}
-
-	&:focus
-	{
-		border-color: var(--rs-color-primary);
-	}
 
 	&[disabled],
 	&[readonly]

@@ -56,11 +56,12 @@
 
 		&:before
 		{
-			border-left: 0.5em solid gray(0, 0.05);
+			background: gray(0, 0.05);
 			bottom: 0.5em;
 			content: '';
-			top: 0.5em;
 			position: absolute;
+			top: 0.5em;
+			width: 0.5em;
 		}
 	}
 
