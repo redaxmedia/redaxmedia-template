@@ -41,6 +41,7 @@
 	.rs-text-timeline
 	{
 		background: gray(255);
+		border-radius: 0.25em;
 		padding: 1em;
 	}
 }
