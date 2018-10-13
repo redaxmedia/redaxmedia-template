@@ -17,13 +17,18 @@
 
 	& .rs-legend-default
 	{
-		margin-bottom: 0.5em;
+		margin-bottom: 1em;
+
+		& a
+		{
+			text-decoration: underline;
+		}
 	}
 
 	& .rs-label-default
 	{
 		display: block;
-		margin-bottom: 0.5em;
+		margin-bottom: 0.25em;
 
 		&:after
 		{
