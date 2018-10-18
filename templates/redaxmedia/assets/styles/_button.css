@@ -10,10 +10,10 @@
 
 %rs-button
 {
-	background: gray(0, 0.1);
+	background: gray(0 / 10%);
 	border-radius: 0.25em;
 	box-sizing: border-box;
-	color: gray(0, 0.4);
+	color: gray(0 / 40%);
 	display: inline-block;
 	padding: 0.75em;
 
