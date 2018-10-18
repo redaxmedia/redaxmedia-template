@@ -15,13 +15,13 @@
 
 .rs-title-header
 {
-	color: gray(0 / 40%);
+	color: gray(0, 0.4);
 	font: bold 5em var(--rs-font-secondary);
 }
 
 .rs-text-header
 {
-	color: gray(0 / 30%);
+	color: gray(0, 0.3);
 	display: block;
 	font-size: 1.5em;
 	margin-top: 2em;
