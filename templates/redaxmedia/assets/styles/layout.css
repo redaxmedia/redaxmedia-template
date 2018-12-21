@@ -8,7 +8,7 @@
 
 .rs-body
 {
-	background: gray(240);
-	color: gray(100);
+	background: gray(95);
+	color: gray(40);
 	font: 1em var(--rs-font-primary);
 }

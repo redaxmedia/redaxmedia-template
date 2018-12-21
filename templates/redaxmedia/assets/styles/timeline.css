@@ -40,7 +40,7 @@
 {
 	.rs-text-timeline
 	{
-		background: gray(255);
+		background: gray(100);
 		border-radius: 0.25em;
 		padding: 1em;
 	}
@@ -56,7 +56,7 @@
 
 		&:before
 		{
-			background: gray(0, 0.05);
+			background: gray(0 / 0.05);
 			bottom: 0.5em;
 			content: '';
 			position: absolute;
@@ -85,7 +85,7 @@
 
 		&:after
 		{
-			color: gray(0, 0.2);
+			color: gray(0 / 0.2);
 			content: attr(data-category);
 			font-weight: bold;
 			line-height: 4em;
@@ -97,7 +97,7 @@
 		{
 			background: var(--rs-color-primary);
 			border-radius: 50%;
-			box-shadow: 0 0 0 0.5em gray(240);
+			box-shadow: 0 0 0 0.5em gray(95);
 			content: '';
 		}
 
@@ -119,7 +119,7 @@
 
 	.rs-section-timeline
 	{
-		background: gray(255);
+		background: gray(100);
 		border-radius: 0.25em;
 		padding: 1em;
 	}
@@ -210,7 +210,7 @@
 
 		& .rs-text-date
 		{
-			color: gray(0, 0.2);
+			color: gray(0 / 0.2);
 			font-size: 1.75em;
 			margin-top: -0.625em;
 			position: absolute;

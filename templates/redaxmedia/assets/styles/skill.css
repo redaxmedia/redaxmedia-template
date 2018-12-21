@@ -23,9 +23,9 @@
 
 	&:after
 	{
-		background: gray(230);
+		background: gray(90);
 		border-radius: 0.25em;
-		color: gray(0, 0.3);
+		color: gray(0 / 0.3);
 		content: attr(data-level) '/100';
 		display: block;
 		font-size: 0.75em;
