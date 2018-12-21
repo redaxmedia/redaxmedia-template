@@ -29,6 +29,7 @@
 
 <?php echo Tag::link()
 	->init()
+	->append(['href' => 'data:image/png;base64,', 'rel' => 'shortcut icon'])
 	->append(['href' => Helper::getRegistry('fullRoute') ? Helper::getCanonical() : Helper::getRegistry('root'), 'rel' => 'canonical'])
 	->appendFile(
 	[
