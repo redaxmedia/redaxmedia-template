@@ -29,8 +29,8 @@
 
 <?php echo Tag::link()
 	->init()
-	->append(['href' => 'data:image/png;base64,', 'rel' => 'shortcut icon'])
 	->append(['href' => Helper::getRegistry('fullRoute') ? Helper::getCanonical() : Helper::getRegistry('root'), 'rel' => 'canonical'])
+	->append(['href' => 'data:image/png;base64,', 'rel' => 'shortcut icon'])
 	->appendFile(
 	[
 		'https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=' . Helper::getSubset(),
