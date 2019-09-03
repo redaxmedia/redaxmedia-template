@@ -31,10 +31,10 @@
 	->init()
 	->append(['href' => Helper::getRegistry('fullRoute') ? Helper::getCanonical() : Helper::getRegistry('root'), 'rel' => 'canonical'])
 	->append(['href' => 'data:image/png;base64,', 'rel' => 'shortcut icon'])
+	->append(['href' => 'https://fonts.gstatic.com', 'rel' => 'preconnect'])
 	->appendFile(
 	[
-		'https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=' . Helper::getSubset(),
-		'https://fonts.googleapis.com/css?family=Amatic+SC:700&amp;subset=' . Helper::getSubset(),
+		'https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|Amatic+SC:700&amp&amp;subset=' . Helper::getSubset(),
 		'templates/redaxmedia/dist/styles/redaxmedia.min.css'
 	])
 	->rewrite(
@@ -43,8 +43,6 @@
 		'../../../../modules' => '../../modules'
 	])
 	->concat(); ?>
-
-<?php echo Tag::link()->init('admin'); ?>
 
 <!-- head script -->
 
