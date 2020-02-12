@@ -87,7 +87,7 @@
 		{
 			color: gray(0 / 0.2);
 			content: attr(data-category);
-			font-weight: bold;
+			font-weight: 700;
 			line-height: 4em;
 			text-align: center;
 			text-transform: uppercase;

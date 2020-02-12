@@ -16,7 +16,7 @@
 .rs-title-header
 {
 	color: gray(0 / 0.4);
-	font: bold 5em var(--rs-font-secondary);
+	font: 700 5em var(--rs-font-secondary);
 }
 
 .rs-text-header

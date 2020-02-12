@@ -13,7 +13,7 @@
 {
 	background: var(--rs-color-common-07);
 	color: gray(0 / 0.4);
-	font-weight: bold;
+	font-weight: 700;
 	padding: 3em 0 1em;
 	position: fixed;
 	right: -5em;

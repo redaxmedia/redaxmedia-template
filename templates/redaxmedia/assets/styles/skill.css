@@ -26,10 +26,10 @@
 		background: gray(90);
 		border-radius: 0.25em;
 		color: gray(0 / 0.3);
-		content: attr(data-level) '/100';
+		content: attr(data-level) '%';
 		display: block;
 		font-size: 0.75em;
-		font-weight: bold;
+		font-weight: 700;
 		margin-top: 0.25em;
 		padding: 0.5em 0.75em;
 		text-align: right;
