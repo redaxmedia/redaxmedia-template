@@ -34,12 +34,8 @@
 
 .rs-box-content
 {
+	@extend %box-content;
 	@extend %rs-box-content;
-
-	& a:not([class])
-	{
-		text-decoration: underline;
-	}
 }
 
 .rs-box-byline
