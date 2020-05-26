@@ -35,11 +35,21 @@
 .rs-box-content
 {
 	@extend %rs-box-content;
+
+	& a:not([class])
+	{
+		text-decoration: underline;
+	}
 }
 
 .rs-box-byline
 {
-	display: none;
+	margin-top: 1em;
+
+	& span + span:before
+	{
+		content: ' ';
+	}
 }
 
 /** @section 2. query */
