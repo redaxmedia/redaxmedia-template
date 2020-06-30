@@ -5,8 +5,6 @@
 <?php $categoryId = Helper::getRegistry('categoryId'); ?>
 <?php $articleId = Helper::getRegistry('articleId'); ?>
 <?php if ($categoryId || $articleId): ?>
-	<section class="rs-section-article">
-		<?php echo Tag::article($categoryId, $articleId); ?>
-	</section>
+	<?php echo Tag::article($categoryId, $articleId); ?>
 <?php endif; ?>
 

@@ -17,7 +17,7 @@
 	margin-top: 1em;
 }
 
-.rs-section-timeline
+.rs-box-timeline
 {
 	position: relative;
 }
@@ -117,7 +117,7 @@
 		margin-top: 4em;
 	}
 
-	.rs-section-timeline
+	.rs-box-timeline
 	{
 		background: gray(100);
 		border-radius: 0.25em;
@@ -156,7 +156,7 @@
 
 @media (--media-medium-max)
 {
-	.rs-section-timeline .rs-text-date
+	.rs-box-timeline .rs-text-date
 	{
 		display: none;
 	}
@@ -204,7 +204,7 @@
 		}
 	}
 
-	.rs-section-timeline
+	.rs-box-timeline
 	{
 		width: 35%;
 

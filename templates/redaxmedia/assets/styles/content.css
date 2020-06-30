@@ -34,12 +34,18 @@
 
 .rs-box-content
 {
+	@extend %box-content;
 	@extend %rs-box-content;
 }
 
 .rs-box-byline
 {
-	display: none;
+	margin-top: 1em;
+
+	& span + span:before
+	{
+		content: ' ';
+	}
 }
 
 /** @section 2. query */
