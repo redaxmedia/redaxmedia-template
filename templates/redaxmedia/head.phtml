@@ -30,7 +30,6 @@
 	->init()
 	->append(['href' => Helper::getRegistry('fullRoute') ? Helper::getCanonical() : Helper::getRegistry('root'), 'rel' => 'canonical'])
 	->append(['href' => Helper::getIcon(), 'rel' => 'shortcut icon'])
-	->append(['href' => Helper::getIcon(), 'rel' => 'apple-touch-icon'])
 	->append(['href' => 'https://fonts.gstatic.com', 'rel' => 'preconnect'])
 	->appendFile(
 	[
