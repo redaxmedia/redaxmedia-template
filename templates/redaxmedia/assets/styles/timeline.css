@@ -187,8 +187,8 @@
 
 			& .rs-text-date
 			{
-				margin-right: -5.5em;
 				right: -50%;
+				transform: translateX(5.5em) translateY(-50%);
 			}
 		}
 
@@ -199,7 +199,7 @@
 			& .rs-text-date
 			{
 				left: -50%;
-				margin-left: -5.5em;
+				transform: translateX(-5.5em) translateY(-50%);
 			}
 		}
 	}
@@ -210,9 +210,8 @@
 
 		& .rs-text-date
 		{
-			color: gray(0 / 0.2);
+			color: gray(0 / 0.3);
 			font-size: 1.75em;
-			margin-top: -0.625em;
 			position: absolute;
 			top: 50%;
 		}

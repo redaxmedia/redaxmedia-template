@@ -6,11 +6,38 @@
 
 /** @section 1. header */
 
+.rs-wrapper-header
+{
+	overflow: hidden;
+	padding-bottom: 4vw;
+}
+
 .rs-header
 {
 	background: var(--rs-color-primary);
 	padding: 4em 2em;
+	position: relative;
 	text-align: center;
+
+	&:after
+	{
+		background: var(--rs-color-primary);
+		bottom: -2vw;
+		content: '';
+		height: 4vw;
+		left: -1em;
+		position: absolute;
+		right: -1em;
+		transform: rotate(2deg);
+		z-index: 1;
+	}
+}
+
+.rs-title-header,
+.rs-text-header
+{
+	position: relative;
+	z-index: 2;
 }
 
 .rs-title-header
