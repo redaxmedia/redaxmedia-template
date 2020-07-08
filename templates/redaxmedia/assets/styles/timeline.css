@@ -85,7 +85,7 @@
 
 		&:after
 		{
-			color: gray(0 / 0.2);
+			color: gray(0 / 0.4);
 			content: attr(data-category);
 			font-weight: 700;
 			line-height: 4em;
