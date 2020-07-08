@@ -14,7 +14,7 @@
 
 .rs-wrapper-timeline + .rs-wrapper-timeline
 {
-	margin-top: 1em;
+	margin-top: 2em;
 }
 
 .rs-box-timeline
@@ -71,34 +71,20 @@
 		flex-direction: column;
 		position: relative;
 
-		&:after,
-		&:before
-		{
-			box-sizing: border-box;
-			display: block;
-			height: 4em;
-			margin-top: -2em;
-			position: absolute;
-			top: 50%;
-			width: 4em;
-		}
-
-		&:after
-		{
-			color: gray(0 / 0.4);
-			content: attr(data-category);
-			font-weight: 700;
-			line-height: 4em;
-			text-align: center;
-			text-transform: uppercase;
-		}
-
 		&:before
 		{
 			background: var(--rs-color-primary);
 			border-radius: 50%;
 			box-shadow: 0 0 0 0.5em gray(95);
-			content: '';
+			color: gray(0 / 0.4);
+			content: attr(data-category);
+			font: 700 1.5em/3em var(--rs-font-secondary);
+			position: absolute;
+			text-align: center;
+			text-transform: uppercase;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 3em;
 		}
 
 		&[data-category="misc"]:before
@@ -144,10 +130,9 @@
 	{
 		margin-left: 6em;
 
-		&:after,
 		&:before
 		{
-			left: -7em;
+			left: -4.75em;
 		}
 	}
 }
@@ -174,11 +159,10 @@
 
 	.rs-wrapper-timeline
 	{
-		&:after,
 		&:before
 		{
 			left: 50%;
-			margin-left: -2em;
+			transform: translateX(-50%) translateY(-50%);
 		}
 
 		&:nth-child(even)
@@ -210,8 +194,8 @@
 
 		& .rs-text-date
 		{
-			color: gray(0 / 0.3);
-			font-size: 1.75em;
+			color: gray(0 / 0.1);
+			font-size: 2em;
 			position: absolute;
 			top: 50%;
 		}

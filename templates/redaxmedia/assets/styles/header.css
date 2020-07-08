@@ -15,7 +15,7 @@
 .rs-header
 {
 	background: var(--rs-color-primary);
-	padding: 4em 2em;
+	padding: 4em 2em 2em;
 	position: relative;
 	text-align: center;
 
