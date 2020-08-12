@@ -29,6 +29,7 @@
 
 .rs-text-timeline
 {
+	@extend %box-content;
 	font-size: 1.25em;
 }
 
