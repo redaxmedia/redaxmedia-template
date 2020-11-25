@@ -3,5 +3,4 @@ Redaxmedia Template
 
 > Template for Redaxmedia's website.
 
-[![Build Status](https://img.shields.io/travis/redaxmedia/redaxmedia-template.svg)](https://travis-ci.org/redaxmedia/redaxmedia-template)
-
+[![Build Status](https://img.shields.io/github/workflow/status/redaxmedia/redaxmedia-template/ci.svg)](https://github.com/redaxmedia/redaxmedia-template/actions?query=workflow:ci)
