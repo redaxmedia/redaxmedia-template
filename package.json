@@ -32,7 +32,8 @@
 		"postcss-import": "13.0.0",
 		"postcss-nesting": "7.0.1",
 		"postcss-reporter": "7.0.1",
-		"postcss-rtl": "git://github.com/mjhenkes/postcss-rtl#master",
+		"postcss-rtl": "1.7.3",
+		"rtlcss": "2.6.1",
 		"stylefmt": "6.0.3",
 		"stylelint": "13.8.0",
 		"stylelint-config-redaxmedia": "3.1.0"
